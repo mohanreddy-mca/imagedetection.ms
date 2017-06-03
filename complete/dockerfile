@@ -1,0 +1,4 @@
+FROM java:7
+EXPOSE 9004:9004
+ADD /target/imagedetection.ms-0.1.0.jar imagedetection.ms-0.1.0.jar
+ENTRYPOINT ["java", "-jar", "imagedetection.ms-0.1.0.jar"]
