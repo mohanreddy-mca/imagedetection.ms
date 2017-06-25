@@ -31,11 +31,56 @@
             <scope>test</scope>
         </dependency>
         <!-- end::tests[] -->
+        
+        <!-- Reactor -->
+		<dependency>
+			<groupId>org.projectreactor</groupId>
+			<artifactId>reactor-net</artifactId>
+			<version>1.1.0.M3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectreactor.spring</groupId>
+			<artifactId>reactor-spring-context</artifactId>
+			<version>1.1.0.M3</version>
+		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.0.31.Final</version>
+		</dependency>
+
+		<!-- GraphicsMagick -->
+		<dependency>
+			<groupId>com.sharneng</groupId>
+			<artifactId>gm4java</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+	<!-- Google Cloud Storage API -->
+		<dependency>
+			<groupId>com.google.cloud</groupId>
+			<artifactId>google-cloud-storage</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.appengine.tools/appengine-gcs-client -->
+		<dependency>
+		    <groupId>com.google.appengine.tools</groupId>
+		    <artifactId>appengine-gcs-client</artifactId>
+		    <version>0.6</version>
+		</dependency>
+		
+		
     </dependencies>
 
     <properties>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
     </properties>
+    
+    <repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<url>https://repo.spring.io/libs-milestone</url>
+		</repository>
+	</repositories>
 
     <build>
         <plugins>

@@ -16,7 +16,7 @@ public class Application {
         System.out.println("=============Application Started......");
     }
 
-    /*@Bean
+    @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         return args -> {
 
@@ -29,6 +29,6 @@ public class Application {
             }
 
         };
-    }*/
+    }
 
 }
